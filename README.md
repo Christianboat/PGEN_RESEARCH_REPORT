@@ -1,4 +1,4 @@
-![PGEN Banner](PGEN_logofinal.jpg)
+![PGEN Banner](PGEN_Logofinal.jpg)
 #  Proximus Generation (PGEN) — Mentorship Research Dashboard
 
 Welcome to the **PGEN Mentorship Research Dashboard** 📊  
