@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PGEN — Baseline Research Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="PGEN_Logofinal.jpg" alt="PGEN Logo" style="width:100%;height:100%;border-radius:12px;object-fit:cover;">
+</div>
+      <div>
+        <h1>PGEN — Baseline Research Report</h1>
+        <p class="lead">Summary of 104 application responses</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 style="margin:0 0 6px">Executive Summary</h2>
+          <p style="color:var(--muted);margin:0 0 12px">This baseline study analyzes 104 application responses to the Proximus Generation (PGEN) mentorship program from students at Kaladan S.D.A JHS. The goal is to describe participants' demographics, career interests, self-reported skill gaps, and academic performance to inform program design.</p>
+
+          <div class="summary">
+            <div class="stat">
+              <h3>Total Applicants</h3>
+              <p>104</p>
+            </div>
+            <div class="stat">
+              <h3>Female</h3>
+              <p>70 (67%)</p>
+            </div>
+            <div class="stat">
+              <h3>Male</h3>
+              <p>34 (33%)</p>
+            </div>
+            <div class="stat">
+              <h3>Top Career</h3>
+              <p>Medicine / Health (53)</p>
+            </div>
+          </div>
+
+          <div class="charts" style="margin-top:18px">
+            <div class="chart">
+              <h4>Gender Distribution</h4>
+              <canvas id="genderChart" width="300" height="180"></canvas>
+            </div>
+
+            <div class="chart">
+              <h4>Academic Performance</h4>
+              <canvas id="performanceChart" width="300" height="180"></canvas>
+            </div>
+          </div>
+
+          <div class="chart" style="margin-top:16px">
+            <h4>Top Career Interests</h4>
+            <canvas id="careerChart" width="500" height="220"></canvas>
+          </div>
+
+          <div class="chart" style="margin-top:16px">
+            <h4>Top Skills Students Want to Improve</h4>
+            <canvas id="skillsChart" width="500" height="220"></canvas>
+          </div>
+
+          <div class="chart" style="margin-top:16px">
+            <h4>Subject–Career Alignment</h4>
+            <canvas id="alignmentChart" width="500" height="220"></canvas>
+            <p style="color:var(--muted);margin-top:8px">42% of students show strong alignment (favorite subject matches career choice), while 58% show partial or no alignment. This mismatch highlights the need for guidance on subject–career pathways.</p>
+          </div>
+
+        </section>
+
+        <footer style="margin-top:12px" class="card">
+          <strong>Prepared by:</strong> PGEN data analysis • <span style="color:var(--muted)">Generated from program application responses</span>
+        </footer>
+
+      </main>
+
+      <aside class="right">
+        <div class="card">
+
+          <div class="accordion">
+            <div class="acc-item">
+              <div class="acc-head">Methodology <span>▾</span></div>
+              <div class="acc-body">Descriptive statistics, coding of open responses, cross-tabulation, and visualization with interactive charts. Alignment quantified (42% aligned, 58% misaligned).</div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-head">Limitations <span>▾</span></div>
+              <div class="acc-body">Self-reported data, single snapshot, manual coding for some variables. Subject-career alignment calculated using broad matching criteria.</div>
+            </div>
+
+            <div class="acc-item">
+              <div class="acc-head">Appendix & Code <span>▾</span></div>
+              <div class="acc-body">Charts built with Chart.js. Python preprocessing used to generate aggregate numbers. Script available upon request.</div>
+            </div>
+          </div>
+
+          <h4 style="margin-top:12px">Key Tables</h4>
+          <table>
+            <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Total</td><td>104</td></tr>
+              <tr><td>Female</td><td>70</td></tr>
+              <tr><td>Male</td><td>34</td></tr>
+              <tr><td>Top career</td><td>Medicine (53)</td></tr>
+              <tr><td>Top skill</td><td>Public Speaking (39)</td></tr>
+              <tr><td>Alignment</td><td>42% aligned</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card" style="margin-top:16px">
+            <h3 style="margin-top:0">Comprehensive Analysis</h3>
+            <p style="color:var(--muted)">
+                The answers in the application responses show that, overall academic performance is average, with the preferred subjects of many of the students not being reflected in their career choices. To give an example, among students who made a choice in favor of the profession of Medicine, Social Studies or Arts were noted as their preferred subject, and among future engineers, no STEM-related subject was most likely to be preferred.
+            </p>
+
+            <p style="color:var(--muted)">
+                This misalignment suggests a <strong>guidance gap</strong> — students may not fully understand how subject strengths 
+                link to their dream careers. Additionally:
+            </p>
+
+            <ul style="color:var(--muted);margin-left:18px">
+                <li><strong>67% female participation</strong> shows strong inclusivity, but few females selected STEM fields.</li>
+                <li><strong>42% subject-career alignment</strong> means more than half of students need mentorship on pathways.</li>
+                <li>Healthcare dominates as a career choice (51%), followed by Education and Engineering, 
+                    suggesting high interest in traditional careers.</li>
+                <li>Public Speaking and Digital Skills emerged as the most requested skills, showing 
+                    demand for <strong>21st-century competencies</strong>.</li>
+            </ul>
+
+            <p style="color:var(--muted)">
+                Mentorship sessions should therefore <strong>bridge the alignment gap</strong> by linking subjects to real careers, 
+                and by equipping students with practical skills that complement their academic strengths.
+            </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
