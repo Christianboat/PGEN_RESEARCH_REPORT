@@ -18,7 +18,7 @@ Built with **HTML, CSS, and Chart.js**, the dashboard provides an interactive wa
 ---
 
 ## 🚀 Live Demo
-👉 Try it out here: [https://yourusername.github.io/pgen-research-report](https://yourusername.github.io/pgen-research-report)  
+👉 Try it out here: [[https://yourusername.github.io/pgen-research-report](https://christianboat.github.io/PGEN_RESEARCH_REPORT/pgen)]
 
 ---
 
